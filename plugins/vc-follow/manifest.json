@@ -1,0 +1,13 @@
+{
+  "format": 1,
+  "id": "dev.community.vc-follow",
+  "name": "VC Follow",
+  "description": "Automatically follow a selected friend when they move between voice channels in your current server.",
+  "author": "Community",
+  "version": "0.2.0",
+  "dependencies": {
+    "revenge.api": { "version": ">=1" },
+    "discord": { "version": "*" }
+  },
+  "dist": { "script": "index.js" }
+}
