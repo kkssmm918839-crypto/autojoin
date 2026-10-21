@@ -1,16 +1,3 @@
-// lang: TS | file: index.ts | runtime: Revenge JS-only plugin (@vendetta compat API)
-//
-// /join <userid> — one lookup, joins immediately or waits for a seat in that one channel.
-//   Stops automatically the moment the target leaves that channel (no retargeting).
-//
-// /loopjoin <userid> <attempts> — same as /join, but if the target leaves before a seat opens,
-//   does ONE fresh lookup to see where they are now and tries again. Hard-capped at `attempts`
-//   (clamped to 1000 so its infinite?  after that many tries it stops on its own regardless
-//   of outcome. Each attempt is independent: find once, wait on that one channel, stop or retry.
-//   This is bounded retries, not standing presence tracking — it never runs past the attempt cap
-//   and never polls for location outside of a lookup triggered by a failed attempt.
-//
-// /cancel — stops an active /join or /loopjoin run immediately.
 
 import { logger } from "@vendetta";
 import { findByProps } from "@vendetta/metro";
