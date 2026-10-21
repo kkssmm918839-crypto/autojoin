@@ -1,0 +1,14 @@
+{
+    "name": "FakeDeafen",
+    "description": "Appear deafened and muted to others while your mic and audio stay live.",
+    "authors": [
+        {
+            "name": "Li fawaz",
+            "id": "1330929142643818516"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_mute_mic"
+    }
+}
