@@ -16,9 +16,9 @@ import { logger } from "@vendetta";
 import { findByProps } from "@vendetta/metro";
 import { registerCommand } from "@vendetta/commands";
 
-const POLL_INTERVAL_MS = 4000;
-const MAX_LOOPJOIN_ATTEMPTS = 3;
-const MIN_LOOPJOIN_ATTEMPTS = 2;
+const POLL_INTERVAL_MS = 400;
+const MAX_LOOPJOIN_ATTEMPTS = 10000;
+const MIN_LOOPJOIN_ATTEMPTS = 10000;
 
 let unregister_join: (() => void) | null = null;
 let unregister_loopjoin: (() => void) | null = null;
