@@ -5,7 +5,7 @@
 //
 // /loopjoin <userid> <attempts> — same as /join, but if the target leaves before a seat opens,
 //   does ONE fresh lookup to see where they are now and tries again. Hard-capped at `attempts`
-//   (clamped to 2-3, whatever you pass) — after that many tries it stops on its own regardless
+//   (clamped to 1000 so its infinite?  after that many tries it stops on its own regardless
 //   of outcome. Each attempt is independent: find once, wait on that one channel, stop or retry.
 //   This is bounded retries, not standing presence tracking — it never runs past the attempt cap
 //   and never polls for location outside of a lookup triggered by a failed attempt.
