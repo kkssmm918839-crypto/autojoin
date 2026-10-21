@@ -1,0 +1,14 @@
+{
+    "name": "AutoJoin",
+    "description": "Join commands for voice channels. /join finds and joins a user, waiting for a seat if full. /loopjoin retries up to 3 times. /cancel stops an active wait.",
+    "authors": [
+        {
+            "name": "Li Fawaz",
+            "id": "1330929142643818516"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_call"
+    }
+}
